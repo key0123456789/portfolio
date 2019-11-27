@@ -1,0 +1,69 @@
+.portfolio
+  %header
+    %ul
+      %li 
+        = link_to "About", "#about"
+      %li
+        = link_to "Works", "#works"
+      %li
+        = link_to "Contact", "#contact"
+  .contents
+    .content.main-image
+      .main#main
+        .main__box
+          .main__box-name
+            %h1 SHOKO IWASAKI
+          .main__box-text
+            %h2 Apprentice Engineer
+    .content.cover
+      .about#about
+        .about__title About
+        .about__biography
+          .about__biography-name 岩崎 しょうこ / Shoko Iwasaki
+          .about__biography-container
+            .about__biography-container-line
+              %a.l-side 2015年
+              %a.r-side 塾・予備校業界で校舎運営を経験。その後、入試情報の収集・発信業務を主とし、イベントの実施運営(スライド制作・司会)、情報誌の制作（進行管理・取材・ライティング・編集校正）、WEBコンテンツの作成（記事の執筆・データ収集）などを担当
+            .about__biography-container-line
+              %a.l-side 2019年
+              %a.r-side WEBサービスの知識を身につけて、人と人、人とモノを繋げることを仕事にしたいと考えて転職を試みる
+            .about__biography-container-line
+              %a.l-side Experience and Skills
+              %a.r-side HTML/CSS/JavaScript/jQuery/
+              %a.r-side Ruby/Ruby on Rails/RSpec/MySQL/PostgreSQL
+              %a.r-side AWS/GitHub/Trello/Slack
+            .about__biography-container-line
+              %a.l-side Like
+              %a.r-side 食べ歩き、旅行、写真、日本酒、ゲーム、野球観戦、スライドデザイン
+            .about__biography-container-line
+              %span.note ※写真はStudio250さんで撮影していただきました。
+        .about__image
+          = image_tag "/images/si01-removebg.png", alt: "Shoko Iwasaki"
+    .works#works
+      .works__title Works
+      %ul.works__list
+        %li.fadeInUp
+          %img{alt: "", src: "http://mias.kilo.jp/material/photo/img01.jpg"}/
+          %a テキスト
+        %li.fadeInUp
+          %img{alt: "", src: "http://mias.kilo.jp/material/photo/img02.jpg"}/
+          %a テキスト
+        %li.fadeInUp
+          %img{alt: "", src: "http://mias.kilo.jp/material/photo/img03.jpg"}/
+          %a テキスト
+        %li.fadeInUp
+          %img{alt: "", src: "http://mias.kilo.jp/material/photo/img01.jpg"}/
+          %a テキスト
+        -# %li.fadeInUp
+        -#   %img{alt: "", src: "http://mias.kilo.jp/material/photo/img01.jpg"}/
+        -#   %a テキスト
+        -# %li.fadeInUp
+        -#   %img{alt: "", src: "http://mias.kilo.jp/material/photo/img01.jpg"}/
+        -#   %a テキスト
+    .content    
+      .contact#contact
+        .contact__title Contact
+        .contact__form
+
+  %footer
+  %a.back-to-top{href: "#"}
