@@ -49,6 +49,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry-rails' 
   gem 'better_errors'  
+  gem 'letter_opener_web', '~> 1.0'
 end
 
 group :test do
