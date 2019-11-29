@@ -231,6 +231,11 @@
     opacity: 0.8;
     transition: .3s;
     border-top: 1px solid $color-d-gray;
+    text-align: center;
+    line-height: 50px;
+    font-size: 0.8em;
+    color: $color-d-gray;
+    letter-spacing: 0.05em;
   }
 // ページトップまでスクロール
   .back-to-top {
