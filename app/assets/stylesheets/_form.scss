@@ -51,6 +51,7 @@
       width: 100%;
       padding: 0.3em;
       letter-spacing: 0.1em;
+      resize: none;
       &:focus {
         outline: none;
         background-color: $color-l-sea;
