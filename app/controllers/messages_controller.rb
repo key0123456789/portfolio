@@ -15,10 +15,10 @@ class MessagesController < ApplicationController
   def done
     @message = Message.new(message_params)
     if params[:back]
-      render :action => 'index'
+      render action: 'index'
     else
       MessageMailer.received_email(@message).deliver_now
-      render :action => 'done'
+      render action: 'done'
     end
   end
   
