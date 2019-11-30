@@ -8,6 +8,7 @@
     margin-bottom: 20px;
     min-width: 60%;
     input[type='text'] {
+      transition: 0.3s;
       font-family: sans-serif;
       box-sizing: border-box;
       max-width: 400px;
@@ -41,6 +42,7 @@
   &__textarea {
     min-width: 60%;
     textarea {
+      transition: 0.3s;
       box-sizing: border-box;
       height: calc( 1.3em * 10 );
       line-height: 1.3em;
@@ -69,10 +71,11 @@
     min-width: 60%;
     margin-top: 12px;
     .btn{
+      transition: 0.3s;
       font-family: sans-serif;
       letter-spacing: 0.1em;
-      background-color: $color-l-sea;
-      color: white;
+      background-color: $color-l-gray;
+      color: $color-black;
       padding: 8px 16px;
       border: 0;
       border-radius: 4px;
@@ -80,6 +83,8 @@
       width: 100%;
       &:hover {
         cursor: pointer;
+        background-color: $color-l-sea;
+        color: white;
       }
       &:focus {
         outline-color: $color-l-sea;
