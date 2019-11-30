@@ -60,10 +60,21 @@
         -# %li.fadeInUp
         -#   %img{alt: "", src: "http://mias.kilo.jp/material/photo/img01.jpg"}/
         -#   %a テキスト
-    .content    
+    .content.cover
       .contact#contact
         .contact__title Contact
-        .contact__form
+        .contact__ico
+          %ul
+            %li 
+              %ia.fa.fa-envelope-square.contact__ico-mail
+            %li
+              %i.fa.fa-github.contact__ico-github
+            %li 
+              %i.fa.fa-twitter.contact__ico-twitter
+            %li 
+              %i.fa.fa-search.contact__ico-qiita
+        = render partial: 'contact', locals: {message: @message}
+        -# .contact__form
 
-  %footer
+  %footer &copy; 2019 Shoko Iwasaki
   %a.back-to-top{href: "#"}

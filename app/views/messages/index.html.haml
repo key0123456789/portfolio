@@ -1,0 +1,19 @@
+= form_for(@message, url: { action: :confirm }) do |f|
+  %div
+    %h2 Contact
+    - if @message.errors.present?
+      %div
+        %strong 入力内容にエラーがあります
+        %ul
+          - @message.errors.each do |attr, error|
+            %li= error
+    %div
+      %strong Name
+      %p= f.text_field :name, placeholder: 'Name'
+    %div
+      %strong Mail
+      %p= f.text_field :email, placeholder: 'Mail'
+    %div
+      %strong comment
+      %p= f.text_area :content
+    = f.submit '確認画面へ'
