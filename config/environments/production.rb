@@ -94,4 +94,16 @@ Rails.application.configure do
 
   # 本番環境でマスターキーが指定されていないときにエラーを出す
   config.require_master_key = true
+
+  #mailer
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      address: "smtp.gmail.com",
+      port: 587,
+      domain: "gmail.com",
+      user_name: ENV['SENDGRID_USERNAME'],
+      password: ENV['SENDGRID_PASSWORD'],
+      authentication: :plain,
+      enable_starttls_auto: true
+  }
 end
