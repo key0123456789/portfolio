@@ -47,8 +47,14 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+# production:
+#   <<: *default
+#   database: K-Portfolio_production
+#   username: K-Portfolio
+#   password: <%= ENV['K-PORTFOLIO_DATABASE_PASSWORD'] %>
+
 production:
   <<: *default
-  database: K-Portfolio_production
-  username: K-Portfolio
-  password: <%= ENV['K-PORTFOLIO_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
