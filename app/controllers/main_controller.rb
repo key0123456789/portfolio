@@ -7,8 +7,9 @@ class MainController < ApplicationController
     @message = Message.new(message_params)
     if @message.valid?
       MessageMailer.received_email(@message).deliver_now
-      redirect_to root_path
+      redirect_to root_path, notice: "メッセージありがとうございました"
     else
+      flash.now[:alert] = "メッセージが送信できませんでした"
       render action: 'index'
     end
   end
