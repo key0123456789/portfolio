@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  def index
+  def test
     @message = Message.new
   end
  
