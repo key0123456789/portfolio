@@ -6,9 +6,10 @@ class MainController < ApplicationController
   def done
     @message = Message.new(message_params)
     if @message.valid?
-      render action: 'index'
-    else
       MessageMailer.received_email(@message).deliver_now
+      redirect_to root_path
+    else
+      render action: 'index'
     end
   end
 
