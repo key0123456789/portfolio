@@ -1,11 +1,5 @@
 .contact__form
   = form_for(message,url: {controller: "main", action: "done"}) do |f|
-    - if message.errors.present?
-      .contact__form__error
-        %strong 入力内容を見なおしてください。
-        %ul
-          - message.errors.each do |attr, error|
-            %li= error
     .contact__form__input
       %p= f.text_field :name, placeholder: 'Name'
       %i.fa.fa-user.fa-lg.fa-fw
@@ -15,4 +9,7 @@
     .contact__form__textarea
       %p= f.text_area :content, placeholder: 'Comment'
     .contact__form__btn
+      = f.hidden_field :rendering, class: "st", value: ""
       = f.submit 'Send', class: "btn"
+    .contact__form__error
+      = render "flash"

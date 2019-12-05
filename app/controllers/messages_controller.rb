@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  def index
+  def test
     @message = Message.new
   end
  
@@ -8,14 +8,14 @@ class MessagesController < ApplicationController
     if @message.valid?
       render action: 'confirm'
     else
-      render action: 'index'
+      render action: 'test'
     end
   end
  
   def done
     @message = Message.new(message_params)
     if params[:back]
-      render action: 'index'
+      render action: 'test'
     else
       MessageMailer.received_email(@message).deliver_now
       render action: 'done'

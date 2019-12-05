@@ -1,5 +1,5 @@
 class MessageMailer < ApplicationMailer
-  default to: ENV['MAIL'] # 送信先アドレス
+  default to: ENV['EMAIL_ADDRESS'] # 送信先アドレス
  
   def received_email(message)
     @message = message
