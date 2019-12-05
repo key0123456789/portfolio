@@ -22,21 +22,22 @@
           .about__biography-name 岩崎 しょうこ / Shoko Iwasaki
           .about__biography-container
             .about__biography-container-line
-              %a.l-side 2015年
-              %a.r-side 塾・予備校業界で校舎運営を経験。その後、入試情報の収集・発信業務を主とし、イベントの実施運営(スライド制作・司会)、情報誌の制作（進行管理・取材・ライティング・編集校正）、WEBコンテンツの作成（記事の執筆・データ収集）などを担当
+              %a.l-side 2015年―
+              %a.r-side 塾・予備校業界で校舎運営を経験。探究心を買われ入試情報の収集・発信業務を兼務するようになる。現在は主にイベントの実施運営(スライド制作・司会)、情報誌の制作（進行管理・取材・ライティング・編集校正）、WEBコンテンツの作成（記事の執筆・データ収集）などを幅広く担当する。特にスライド制作では内外とも高く評価され、所属ブランドの資料作成を一任されている。
             .about__biography-container-line
-              %a.l-side 2019年
-              %a.r-side WEBサービスの知識を身につけて、人と人、人とモノを繋げることを仕事にしたいと考えて転職を試みる
+              %a.l-side 2019年―
+              %a.r-side WEBサービスの知識を身につけて、人と人、人とモノを繋げることを仕事にしたいと考えて、本格的にプログラミング学習に着手。4月11日から１日も休まずに学習を継続している。
             .about__biography-container-line
-              %a.l-side Experience and Skills
+              %a.l-side ＊Experience and Skills
               %a.r-side HTML/CSS/JavaScript/jQuery/
               %a.r-side Ruby/Ruby on Rails/RSpec/MySQL/PostgreSQL
-              %a.r-side AWS/GitHub/Trello/Slack
+              %a.r-side AWS/Heroku/GitHub/Trello/Slack
             .about__biography-container-line
-              %a.l-side Like
-              %a.r-side 食べ歩き、旅行、写真、日本酒、ゲーム、野球観戦、スライドデザイン
+              %a.l-side ＊Like
+              %a.r-side 食べ歩き、料理、日本酒、旅行、写真、ゲーム、オフ会、野球観戦
+              %a.r-side ★メインの写真は沖縄の美ら海水族館で撮影したものです。
             .about__biography-container-line
-              %span.note ※写真はStudio250さんで撮影していただきました。
+              %span.note ※右の写真はStudio250さんで撮影していただきました。
         .about__image
           = image_tag "/images/si01-removebg.png", alt: "Shoko Iwasaki"
     .works#works
@@ -65,14 +66,21 @@
         .contact__title Contact
         .contact__ico
           %ul
-            %li 
-              %ia.fa.fa-envelope-square.contact__ico-mail
-            %li
-              %i.fa.fa-github.contact__ico-github
-            %li 
-              %i.fa.fa-twitter.contact__ico-twitter
-            %li 
-              %i.fa.fa-search.contact__ico-qiita
+            %li.contact__ico-mail
+              %i.fa.fa-envelope-square
+              %a Mail
+            %li.contact__ico-github
+              %i.fa.fa-github
+              = link_to "", "https://github.com/key0123456789", class: "li-link"
+              %a GitHub
+            %li.contact__ico-twitter
+              %i.fa.fa-twitter
+              = link_to "", "https://twitter.com/key_it6", class: "li-link"
+              %a twitter
+            %li.contact__ico-qiita
+              %i.fa.fa-search
+              = link_to "", "https://qiita.com/key_it6", class: "li-link"
+              %a Qiita
         = render partial: 'contact', locals: {message: @message}
   %footer &copy; 2019 Shoko Iwasaki
   %a.back-to-top{href: "#"}
