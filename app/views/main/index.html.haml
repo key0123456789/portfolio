@@ -39,28 +39,46 @@
             .about__biography-container-line
               %span.note ※右の写真はStudio250さんで撮影していただきました。
         .about__image
-          = image_tag "/images/si01-removebg.png", alt: "Shoko Iwasaki"
+          = image_tag("si01-removebg.png", alt: "Shoko Iwasaki")
     .works#works
       .works__title Works
       %ul.works__list
-        %li.fadeInUp
-          %img{alt: "", src: "http://mias.kilo.jp/material/photo/img01.jpg"}/
-          %a テキスト
-        %li.fadeInUp
-          %img{alt: "", src: "http://mias.kilo.jp/material/photo/img02.jpg"}/
-          %a テキスト
-        %li.fadeInUp
-          %img{alt: "", src: "http://mias.kilo.jp/material/photo/img03.jpg"}/
-          %a テキスト
-        %li.fadeInUp
-          %img{alt: "", src: "http://mias.kilo.jp/material/photo/img01.jpg"}/
-          %a テキスト
-        -# %li.fadeInUp
-        -#   %img{alt: "", src: "http://mias.kilo.jp/material/photo/img01.jpg"}/
-        -#   %a テキスト
-        -# %li.fadeInUp
-        -#   %img{alt: "", src: "http://mias.kilo.jp/material/photo/img01.jpg"}/
-        -#   %a テキスト
+        %li.fadeInUp.grad-wrap
+          %a.grad-trigger 日本酒レビューサイト「Sakemo!」
+          .work.grad-item
+            .work-image
+              = image_tag("sakemo-main.png", alt: "Sakemo!")
+            .work-comment
+              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+        %li.fadeInUp.grad-wrap
+          %a.grad-trigger フリーマケットサイト（クローン）
+          .work.grad-item
+            .work-image
+              = image_tag("freemarket_sample.png", alt: "Freemarket(clone)")
+            .work-comment
+              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+        %li.fadeInUp.grad-wrap
+          %a.grad-trigger タスク管理アプリ「Antask」
+          .work.grad-item
+            .work-image
+              = image_tag("antask.png", alt: "Antask")
+            .work-comment
+              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+        %li.fadeInUp.grad-wrap
+          %a.grad-trigger チャットアプリ「Chat Space」
+          .work.grad-item
+            .work-image
+              = image_tag("chat-space.png", alt: "")
+            .work-comment
+              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
     .content.cover
       .contact#contact
         .contact__title Contact

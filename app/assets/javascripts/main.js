@@ -66,7 +66,7 @@ $(document).ready(function(){
   animation();
   $(window).scroll(function (){
     animation();
-  });          
+  });
 
   // リロードしても同じスクロール位置を保持する
   function keep_scroll_reload() {
