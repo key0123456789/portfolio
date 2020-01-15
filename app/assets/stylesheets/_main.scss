@@ -184,36 +184,19 @@
           width: auto;
           margin: 0 0 60px;
           position: relative;
-          // border: $color-l-gray solid 1px;
-          // cursor: pointer;
           img {
             width: 100%;
-            // height: 200px;
-            // object-fit: cover; 
-            opacity: 0.7;
             &:hover {
               opacity: 1;
               transition: 0.7s;
             }
           }
-          // a {
-          //   position: absolute;
-          //   bottom: 0px;
-          //   left: 1px;
-          //   right: 0;
-          //   width: calc(100% - 24px);
-          //   display: block;
-          //   padding: 4px 12px;
-          //   background-color: white;
-          //   opacity: 0.8;
-          //   z-index: 90;
-          // }
           // 折りたたみ
           .grad-wrap {
             position: relative;
           }
           .grad-wrap + .grad-wrap {
-            margin-top: 40px;
+            margin-top: 60px;
           }
           .grad-trigger {
             position: absolute;
@@ -226,6 +209,7 @@
             background-color: white;
             opacity: 0.8;
             z-index: 90;
+            cursor: pointer;
           }
           .grad-trigger::after {
             content: "\f078";
@@ -234,15 +218,12 @@
             right: 0;
             padding: 0 14px;
           }
-          // .grad-trigger .fa {
-          //   margin-right: .5em;
-          // }
           .grad-item {
             position: relative;
             overflow: hidden;
           }
           .grad-item.is-hide {
-            height: 200px;
+            height: 300px; //折りたたんだときの高さ
             border: $color-l-gray solid 1px;
           }
           .grad-item::before {
@@ -272,14 +253,92 @@
           }
           .work {
             &-image {
-
+              filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.4));
+              margin-bottom: 18px;
             }
             &-comment {
               margin-bottom: 24px;
+              font-family: 'Noto Sans JP', "Noto Sans";
+              padding: 0 12px;
+              position: relative;
+              &-article {
+
+              }
+              &-title {
+                font-size: 1.2em;
+                width: 100%;
+                padding: 8px 0 8px 12px;
+                margin-bottom: 12px;
+                font-weight: bold;
+                border-left: 3px solid $color-red;
+              }
+              &-sec {
+                font-size: 1.1em;
+                border-bottom: 1px solid $color-l-gray;
+                padding: 12px 0 2px 0;
+                margin-bottom: 6px;
+                font-weight: bold;
+              }
+              &-content {
+                padding: 4px 0 12px 16px;
+                font-size: 0.95em;
+                p.text-indent {
+                  margin-left: 1em; 
+                  text-indent: -1em; 
+                  margin: 8px 0;
+                }
+              }
+              .two-column{
+                display: flex;
+                &__left {
+                  width: 60%
+                }
+                &__right {
+                  width: 36%;
+                  padding-left: 12px;
+                  img {
+                    border: 1px solid $color-l-gray;
+                  }
+                }
+              }
             }
+            &__ico-github {
+              display: inline-block;
+              color: $color-l-gray;
+              padding-right: 16px;
+              margin: 4px 0 12px 16px;
+              letter-spacing: 0.1em;
+              position: relative;
+              width: auto;
+              height: 20px;
+              width: 200px;
+              white-space: nowrap;
+              position: absolute;
+              right: 0;
+              top: 4px;
+              &:hover {
+                cursor: pointer;
+                color: #4183c4;
+                transition: 0.4s;
+                text-decoration: underline;
+              }
+            }
+            .li-link {
+              display: block;
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+            // &-github {
+            //   &:hover{
+            //     color: #4183c4;
+            //     cursor: pointer;
+            //   }
+            // }
           }
         }
-        
         .fadeInUp {
           opacity : 0;
           transform: translateY(20px);

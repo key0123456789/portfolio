@@ -49,9 +49,55 @@
             .work-image
               = image_tag("sakemo-main.png", alt: "Sakemo!")
             .work-comment
-              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
-              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
-              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+              .work-comment-article
+                %h3.work-comment-title 日本酒レビューサイト「Sakemo！」
+                .work__ico-github
+                  %i.fa.fa-github
+                  = link_to "", "https://github.com/key0123456789/Sakemo", class: "li-link", target: "blank"
+                  %a GitHubソースコード
+                .work-comment-content
+                  %p 呑んだ日本酒の感想〈Sake * Emotion〉を直感的に入力できるアプリです。日本酒は好きだがなかなか銘柄が覚えられない…という悩みを払拭すべく、嗜みながら「きろく」を残しやすいかどうかを念頭において作成しました。
+              .work-comment-article
+                %h4.work-comment-sec 特長
+                .work-comment-content
+                  %p.text-indent ・"お気に入り度"や"コメント"を含む、さまざまな観点で「きろく」を残すことができます。
+                  %p.text-indent ・気になる銘柄は「ブックマーク」に登録して、一覧で見ることができます。
+                  %p.text-indent ・初期データとして約1,900件の銘柄を用意しました。
+              .work-comment-article
+                %h4.work-comment-sec こだわりポイント
+                .work-comment-content.two-column
+                  .two-column__left
+                    %p.text-indent ・他のサービスにない、自分の「きろく」をメインに表示します。自分だけのページを作り上げていくような感覚で「日本酒を覚えたい」という思いを満たすサイトとして考案しました。
+                    %p.text-indent ・約1,900件の銘柄から、漢字・ひらがなで検索できるようにしました。検索結果を動的に表示し、スピーディに銘柄の詳細ページにアクセスできるようにしています。
+                    %p.text-indent ・銘柄の詳細ページは自分の過去の「きろく」をもとにメーター形式で表示するようにしました。どういう感想を抱いたかを視覚的にわかりやすく見せるために工夫しました。
+                    %p.text-indent ・「きろく」は直感的に入力しやすく、視覚的にも楽しめるようにラジオボタンに動きをつけました。呑んでいても手軽に入力できることを重要視しました。
+                    %p.text-indent ・マイページでは、自分の「きろく」の一覧を見たり、ブックマークした銘柄にアクセスしたりすることができます。
+                  .two-column__right
+                    .slider
+                      .button.button-prev.prev
+                        %i.fa.fa-chevron-left
+                      .button.button-next.next
+                        %i.fa.fa-chevron-right
+                      .slide.active
+                        = link_to "images/sakemo-main.png", target: "blank" do 
+                          = image_tag "sakemo-main.png"
+                      .slide
+                        = link_to "images/sakemo-brand.png", target: "blank" do 
+                          = image_tag "sakemo-brand.png"
+                      .slide
+                        = link_to "images/sakemo-feeling-edit.png", target: "blank" do 
+                          = image_tag "sakemo-feeling-edit.png"
+                      .slide
+                        = link_to "images/sakemo-mypage.png", target: "blank" do 
+                          = image_tag "sakemo-mypage.png"
+
+              .work-comment-article
+                %h4.work-comment-sec 使用したGem
+                .work-comment-content
+                  %p.text-indent ・mechanize： スクレイピング
+                  %p.text-indent ・gretel： パンくずリスト
+                  %p.text-indent ・kaminari： ページネーション
+                  %p.text-indent ・devise： ユーザー管理　など
         %li.fadeInUp.grad-wrap
           %a.grad-trigger フリーマケットサイト（クローン）
           .work.grad-item
@@ -89,15 +135,15 @@
               %a Mail
             %li.contact__ico-github
               %i.fa.fa-github
-              = link_to "", "https://github.com/key0123456789", class: "li-link"
+              = link_to "", "https://github.com/key0123456789", class: "li-link", target: "blank"
               %a GitHub
             %li.contact__ico-twitter
               %i.fa.fa-twitter
-              = link_to "", "https://twitter.com/key_it6", class: "li-link"
+              = link_to "", "https://twitter.com/key_it6", class: "li-link", target: "blank"
               %a twitter
             %li.contact__ico-qiita
               %i.fa.fa-search
-              = link_to "", "https://qiita.com/key_it6", class: "li-link"
+              = link_to "", "https://qiita.com/key_it6", class: "li-link", target: "blank"
               %a Qiita
         = render partial: 'contact', locals: {message: @message}
   %footer &copy; 2019 Shoko Iwasaki
