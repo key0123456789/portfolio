@@ -123,10 +123,10 @@
       }
       &__biography {
         position: absolute;
-        max-width: 600px;
+        max-width: 700px;
         min-width: 200px;
         margin: 12px 180px 40px 16px;
-        padding: 12px 16px;
+        padding: 24px 20px 32px;
         background-color: white;
         opacity: 0.9;
         border-radius: 6px;
@@ -139,10 +139,10 @@
         }
         &-container {
           font-family: 'Noto Sans JP';
-          white-space: pre-wrap;
           font-size: 0.8em;
           letter-spacing: 0.1em;
           width: 100%;
+          margin: 12px 0 18px;
           &-line {
             display: inline-block;
             .l-side {
@@ -151,9 +151,23 @@
             .r-side {
               font-size: 1em;
             }
-            span {
+            .note {
               font-size: 0.7em;
               letter-spacing: 0.1em;
+              margin-left: 1em; 
+            }
+            .text-indent {
+              margin-left: 1em; 
+            }
+            .under-line {
+              text-decoration: underline;
+            }
+            .sub-title {
+              font-weight: bold;
+              font-size: 1.1em;
+              color: $color-d-gray;
+              display: block;
+              padding: 14px 0 4px;
             }
           }
         }
@@ -180,6 +194,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 0 16px;
+        max-width: 1200px;
         li {
           width: auto;
           margin: 0 0 60px;
@@ -367,12 +382,6 @@
               width: 100%;
               height: 100%;
             }
-            // &-github {
-            //   &:hover{
-            //     color: #4183c4;
-            //     cursor: pointer;
-            //   }
-            // }
           }
         }
         .fadeInUp {
@@ -395,9 +404,9 @@
       &__ico {
         width: 100%;
         margin: 0 16px 20px;
-        ul{
+        ul {
           width: 60%;
-          li{
+          li {
             display: inline-block;
             color: $color-l-gray;
             padding-right: 16px;
