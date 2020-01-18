@@ -7,6 +7,7 @@
         = link_to "Works", "#works"
       %li
         = link_to "Contact", "#contact"
+        
   .contents
     .content.main-image
       .main#main
@@ -40,9 +41,11 @@
               %span.note ※右の写真はStudio250さんで撮影していただきました。
         .about__image
           = image_tag("si01-removebg.png", alt: "Shoko Iwasaki")
+
     .works#works
       .works__title Works
       %ul.works__list
+
         %li.fadeInUp.grad-wrap
           %a.grad-trigger 日本酒レビューサイト「Sakemo!」
           .work.grad-item
@@ -65,31 +68,25 @@
                   %p.text-indent ・初期データとして約1,900件の銘柄を用意しました。
               .work-comment-article
                 %h4.work-comment-sec こだわりポイント
-                .work-comment-content.two-column
-                  .two-column__left
-                    %p.text-indent ・他のサービスにない、自分の「きろく」をメインに表示します。自分だけのページを作り上げていくような感覚で「日本酒を覚えたい」という思いを満たすサイトとして考案しました。
-                    %p.text-indent ・約1,900件の銘柄から、漢字・ひらがなで検索できるようにしました。検索結果を動的に表示し、スピーディに銘柄の詳細ページにアクセスできるようにしています。
-                    %p.text-indent ・銘柄の詳細ページは自分の過去の「きろく」をもとにメーター形式で表示するようにしました。どういう感想を抱いたかを視覚的にわかりやすく見せるために工夫しました。
-                    %p.text-indent ・「きろく」は直感的に入力しやすく、視覚的にも楽しめるようにラジオボタンに動きをつけました。呑んでいても手軽に入力できることを重要視しました。
-                    %p.text-indent ・マイページでは、自分の「きろく」の一覧を見たり、ブックマークした銘柄にアクセスしたりすることができます。
-                  .two-column__right
-                    .slider
-                      .button.button-prev.prev
-                        %i.fa.fa-chevron-left
-                      .button.button-next.next
-                        %i.fa.fa-chevron-right
-                      .slide.active
-                        = link_to "images/sakemo-main.png", target: "blank" do 
-                          = image_tag "sakemo-main.png"
-                      .slide
-                        = link_to "images/sakemo-brand.png", target: "blank" do 
-                          = image_tag "sakemo-brand.png"
-                      .slide
-                        = link_to "images/sakemo-feeling-edit.png", target: "blank" do 
-                          = image_tag "sakemo-feeling-edit.png"
-                      .slide
-                        = link_to "images/sakemo-mypage.png", target: "blank" do 
-                          = image_tag "sakemo-mypage.png"
+                .work-comment-content
+                  %p.text-indent ・他のサービスにない、自分の「きろく」をメインに表示します。自分だけのページを作り上げていくような感覚で「日本酒を覚えたい」という思いを叶えるサイトとして考案しました。
+                  %p.text-indent ・約1,900件の銘柄から、漢字・ひらがなで検索できるようにしました。検索結果を動的に表示し、スピーディに銘柄の詳細ページにアクセスできるようにしています。
+                  %p.text-indent ・銘柄の詳細ページは自分の過去の「きろく」をもとにメーター形式で表示するようにしました。どういう感想を抱いたかを視覚的にわかりやすく見せるために工夫しました。
+                  %p.text-indent ・「きろく」は直感的に入力しやすく、視覚的にも楽しめるようにラジオボタンに動きをつけました。呑んでいても手軽に入力できることを重要視しました。
+                  %p.text-indent ・マイページでは、自分の「きろく」の一覧を見たり、ブックマークした銘柄にアクセスしたりすることができます。
+                .work-comment-content.flex
+                  .flex-image
+                    = link_to "images/sakemo-main.png", target: "blank" do 
+                      = image_tag "sakemo-main.png"
+                  .flex-image
+                    = link_to "images/sakemo-brand.png", target: "blank" do 
+                      = image_tag "sakemo-brand.png"
+                  .flex-image
+                    = link_to "images/sakemo-feeling-edit.png", target: "blank" do 
+                      = image_tag "sakemo-feeling-edit.png"
+                  .flex-image
+                    = link_to "images/sakemo-mypage.png", target: "blank" do 
+                      = image_tag "sakemo-mypage.png"
               .work-comment-article
                 %h4.work-comment-sec 開発の所感
                 .work-comment-content
@@ -102,7 +99,6 @@
                   %p.text-indent ・gretel： パンくずリスト
                   %p.text-indent ・kaminari： ページネーション
                   %p.text-indent ・devise： ユーザー管理　など
-        
 
         %li.fadeInUp.grad-wrap
           %a.grad-trigger フリーマケットサイト（クローン） ※チーム開発
@@ -230,7 +226,7 @@
                 %h4.work-comment-sec こだわりポイント
                 .work-comment-content.two-column
                   .two-column__left
-                    %p.text-indent ・ずっと自力でつくってみたいと思っていたメールフォームを導入しました。なかなかメール送信できず苦労しましたが、あえて外部サービスに頼らずに実装したことで自信になりました。
+                    %p.text-indent ・ずっと自力でつくってみたいと思っていたメールフォームを導入しました。なかなかメール送信できず苦労しましたが、あえて外部サービスに頼らずに自力で実装できたことで自信になりました。
                   .two-column__right
                     = link_to "images/portfolio-contact.png", target: "blank", class: "guide-image" do 
                       = image_tag "portfolio-contact.gif"
@@ -289,5 +285,6 @@
               = link_to "", "https://qiita.com/key_it6", class: "li-link", target: "blank"
               %a Qiita
         = render partial: 'contact', locals: {message: @message}
+
   %footer &copy; 2019 Shoko Iwasaki
   %a.back-to-top{href: "#"}
