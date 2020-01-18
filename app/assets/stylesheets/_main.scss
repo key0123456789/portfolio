@@ -214,17 +214,24 @@
             margin-top: 60px;
           }
           .grad-trigger {
+            font-family: 'Noto Sans JP', "Noto Sans";
+            font-size: 1.1em;
             position: absolute;
             bottom: 1px;
             left: 1px;
             right: 0;
             width: calc(100% - 26px);
             display: block;
-            padding: 4px 12px;
+            padding: 8px 12px;
             background-color: white;
             opacity: 0.8;
             z-index: 90;
             cursor: pointer;
+            &:hover {
+              background-color: $color-d-gray;
+              color: white;
+              transition-duration: 600ms;
+            }
           }
           .grad-trigger::after {
             content: "\f078";
@@ -255,6 +262,11 @@
           .grad-trigger.is-show {
             bottom: -2em;
             border: $color-l-gray solid 1px;
+            &:hover {
+              background-color: $color-d-gray;
+              color: white;
+              transition-duration: 600ms;
+            }
           }
           .grad-trigger.is-show::after {
             content: "\f077";
