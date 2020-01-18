@@ -56,7 +56,7 @@
                   = link_to "", "https://github.com/key0123456789/Sakemo", class: "li-link", target: "blank"
                   %a GitHubソースコード
                 .work-comment-content
-                  %p 呑んだ日本酒の感想〈Sake * Emotion〉を直感的に入力できるアプリです。日本酒は好きだがなかなか銘柄が覚えられない…という悩みを払拭すべく、嗜みながら「きろく」を残しやすいかどうかを念頭において作成しました。
+                  %p 呑んだ日本酒の感想〈Sake * Emotion〉を直感的に入力できるアプリです。日本酒は好きだがなかなか銘柄が覚えられない…という悩みを払拭すべく、酔っぱらいでも「きろく」を残せるかどうかを念頭において作成しました。
               .work-comment-article
                 %h4.work-comment-sec 特長
                 .work-comment-content
@@ -90,7 +90,11 @@
                       .slide
                         = link_to "images/sakemo-mypage.png", target: "blank" do 
                           = image_tag "sakemo-mypage.png"
-
+              .work-comment-article
+                %h4.work-comment-sec 開発の所感
+                .work-comment-content
+                  %p.text-indent ・はじめて検索機能＆検索結果の非同期通信を実践しました。以前は難しいと感じていたところや理解が甘い箇所も自力で補うことができました。
+                  %p.text-indent ・過去の知識をもとにいろいろな機能を自力で考えられるようになり、格段に開発がスムーズになったと感じました。経験と知識を積むほど、自分のできることが増えていくのだろうと思います。いまの自分が考えられる以上のことをたくさん経験して、対応できる幅をどんどん広げていきたいです。
               .work-comment-article
                 %h4.work-comment-sec 使用したGem
                 .work-comment-content
@@ -98,33 +102,172 @@
                   %p.text-indent ・gretel： パンくずリスト
                   %p.text-indent ・kaminari： ページネーション
                   %p.text-indent ・devise： ユーザー管理　など
+        
+
         %li.fadeInUp.grad-wrap
-          %a.grad-trigger フリーマケットサイト（クローン）
+          %a.grad-trigger フリーマケットサイト（クローン） ※チーム開発
           .work.grad-item
             .work-image
               = image_tag("freemarket_sample.png", alt: "Freemarket(clone)")
             .work-comment
-              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
-              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
-              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+              .work-comment-article
+                %h3.work-comment-title フリーマーケットサイト（クローン）
+                .work__ico-github
+                  %i.fa.fa-github
+                  = link_to "", "https://github.com/key0123456789/freemarket_sample_53b", class: "li-link", target: "blank"
+                  %a GitHubソースコード
+                .work-comment-content
+                  %p 有名フリーマーケットサイトにおける商品やりとりの一連の流れを再現しました。
+              .work-comment-article
+                %h4.work-comment-sec 開発の状況
+                .work-comment-content
+                  %a.subheading 開発環境
+                  %p Ruby / Ruby on Rails / MySQL / Github / AWS / Visual Studio Code
+                  %a.subheading  開発機関と平均作業時間
+                  %p 平日2.5時間、休日8時間
+                  %a.subheading  開発体制
+                  %p 人数5名、アジャイル型開発（スクラム）、Trelloによるタスク管理、Slack・Zoomを用いた話し合い
+              .work-comment-article
+                %h4.work-comment-sec こだわりポイント
+                .work-comment-content.two-column
+                  .two-column__left
+                    %p.text-indent ・初心者ガイドを作成し、新規登録後にページ遷移するようにしました。実在するサービスに関して、「登録したけど使ってない」「何からはじめてよいかわからない」というチームメンバーの声をもとに、アクティブ・ユーザー数を増やすためのサービス利用開始を促す工夫として取り入れました。
+                  .two-column__right
+                    = link_to "images/freemarket-guide.png", target: "blank", class: "guide-image" do 
+                      = image_tag "freemarket-guide.png"
+
+              .work-comment-article
+                %h4.work-comment-sec 開発の所感
+                .work-comment-content.two-column
+                  .two-column__left
+                    %p.text-indent ・商品出品時、商品の情報とともに複数画像の登録が行えるようになるまでに時間を要しました。時間をかけてもうまく行かず、メンターから「実装例と状況を同じにして、同じようにやってみてはどうか」というアドバイスをいただき、解決することができました。どうしても立ち行かないときに、一度離れてみたり、状況を変えてみたりすることは、今後も取り入れていこうと思いました。
+                    %p.text-indent ・チームメンバーそれぞれが苦労したポイントも、密に連絡をとり、お互いに解決策を出し合いながら進められました。頼りにしてもらえたり、「楽しそうにやるよね」と言ってもらえたりすることが嬉しく、良い刺激になりました。
+                    %p.text-indent ・全員がはじめてのチーム開発ながら、一番最初にDB設計や分担について綿密に話し合いをしたことで、共通認識をもってそれぞれが作業に取り掛かることができました。今後も、スタートは大切にしていきたいと思いました。
+                  .two-column__right
+                    .slider
+                      .button.button-prev.prev
+                        %i.fa.fa-chevron-left
+                      .button.button-next.next
+                        %i.fa.fa-chevron-right
+                      .slide.active
+                        = link_to "images/freemarket-main-slider.png", target: "blank" do 
+                          = image_tag "freemarket-main-slider.png"
+                      .slide
+                        = link_to "images/freemarket-item.png", target: "blank" do 
+                          = image_tag "freemarket-item.png"
+                      .slide
+                        = link_to "images/freemarket-user-login.png", target: "blank" do 
+                          = image_tag "freemarket-user-login.png"
+                      .slide
+                        = link_to "images/freemarket-user-registration.png", target: "blank" do 
+                          = image_tag "freemarket-user-registration.png"
+                      .slide
+                        = link_to "images/freemarket-breadcrumbs.png", target: "blank" do 
+                          = image_tag "freemarket-breadcrumbs.png"
+              .work-comment-article
+                %h4.work-comment-sec 使用したGem
+                .work-comment-content
+                  %p.text-indent ・active_hash： ハッシュのデータの管理
+                  %p.text-indent ・carrierwave： 画像アップロード
+                  %p.text-indent ・recaptcha：画像認証機能
+                  %p.text-indent ・devise： ユーザー管理
+                  %p.text-indent ・gretel： パンくずリスト など
+
         %li.fadeInUp.grad-wrap
           %a.grad-trigger タスク管理アプリ「Antask」
           .work.grad-item
             .work-image
               = image_tag("antask.png", alt: "Antask")
             .work-comment
-              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
-              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
-              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+              .work-comment-article
+                %h3.work-comment-title タスク管理アプリ「Antask」
+                .work__ico-github
+                  %i.fa.fa-github
+                  = link_to "", "https://github.com/key0123456789/antask", class: "li-link", target: "blank"
+                  %a GitHubソースコード
+                .work-comment-content
+                  %p CRUDを網羅したアプリとして練習のために作成しました。
+                  %p 『現場で使える Ruby on Rails 5 速習実践ガイド』を参考に作成しています。
+              .work-comment-article
+                %h4.work-comment-sec 開発の所感
+                .work-comment-content
+                  %a slimやBootstrapなど、いままで触れてこなかったものを使いながら作成したため、新鮮な気持ちで取り組むことができ、良い経験になりました。
+                  %a 新しいことを取り入れながら、自分のできること、考えられることを増やしていきたいです。
+
         %li.fadeInUp.grad-wrap
           %a.grad-trigger チャットアプリ「Chat Space」
           .work.grad-item
             .work-image
               = image_tag("chat-space.png", alt: "")
             .work-comment
-              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
-              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
-              %p 本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+              .work-comment-article
+                %h3.work-comment-title チャットアプリ「Chat Space」
+                .work__ico-github
+                  %i.fa.fa-github
+                  = link_to "", "https://github.com/key0123456789/chat-space", class: "li-link", target: "blank"
+                  %a GitHubソースコード
+                .work-comment-content
+                  %p グループチャットのできるアプリです。
+                  %p ユーザーがグループを作成し、そこに他のユーザーを検索し招待することができます。
+                  %p スクールのカリキュラムを参考に作成しています。
+
+        %li.fadeInUp.grad-wrap
+          %a.grad-trigger ポートフォリオサイト(当サイト)
+          .work.grad-item
+            .work-image
+              = image_tag("portfolio-main.png", alt: "Portfolio")
+            .work-comment
+              .work-comment-article
+                %h3.work-comment-title このポートフォリオサイト
+                .work__ico-github
+                  %i.fa.fa-github
+                  = link_to "", "https://github.com/key0123456789/portfolio", class: "li-link", target: "blank"
+                  %a GitHubソースコード
+                .work-comment-content
+                  %p 既存のさまざまなポートフォリオサイトから学び、自分なりにデザインを考えて作成しました。
+                  %p さっぱりした自分の人柄に合うと考えて、白ベースにしました。
+              .work-comment-article
+                %h4.work-comment-sec こだわりポイント
+                .work-comment-content.two-column
+                  .two-column__left
+                    %p.text-indent ・ずっと自力でつくってみたいと思っていたメールフォームを導入しました。なかなかメール送信できず苦労しましたが、あえて外部サービスに頼らずに実装したことで自信になりました。
+                  .two-column__right
+                    = link_to "images/portfolio-contact.png", target: "blank", class: "guide-image" do 
+                      = image_tag "portfolio-contact.gif"
+              .work-comment-article
+                %h4.work-comment-sec 使用したGem
+                .work-comment-content
+                  %p.text-indent ・letter_opener_web： 開発時のメール送信機能の確認
+                  %p.text-indent ・figaro： 定数の管理
+
+        %li.fadeInUp.grad-wrap
+          %a.grad-trigger Others：　得意なこと　＆　好きなこと
+          .work.grad-item
+            .work-comment
+              .work-comment-content.flex
+                .flex-image
+                  = link_to "images/slide01.png", target: "blank" do 
+                    = image_tag "slide02.png"
+                .flex-image
+                  = link_to "images/slide03.png", target: "blank" do 
+                    = image_tag "slide05.png"
+                .flex-image
+                  = link_to "images/slide04.png", target: "blank" do 
+                    = image_tag "slide03.png"
+                .flex-image
+                  = link_to "images/slide05.png", target: "blank" do 
+                    = image_tag "slide01.png"
+            .work-comment
+              .work-comment-article
+                %h3.work-comment-title スライドデザイン
+              .work-comment-article
+                %h4.work-comment-sec スライド作成から学んだこと
+                .work-comment-content
+                  %p.text-indent ・現職では、わずかな指定を除きデザインを一任されていて「わたし以上に拘る人はいない」と言われるほどでした。直属の先輩もいない環境で独学で試行錯誤しながらクオリティを高めました。
+                  %p.text-indent ・単位より数字を一回り大きくする、要素のカタマリをわかりやすくする、適度な余白をとる、など、洗練した読みやすい資料を心がけていました。
+                  %p.text-indent ・スライド作成を通して感じたのは、わかりやすいとはなにか、どうやったら伝わるかを考えるのが好きだということ！　発信する手段を広げるために、またその道のプロの中で働くために、今度はプログラミングを身に着けたいと強く思いました。
+
+
     .content.cover
       .contact#contact
         .contact__title Contact
