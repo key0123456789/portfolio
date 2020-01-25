@@ -23,11 +23,13 @@
           .about__biography-name 岩崎 しょうこ / Shoko Iwasaki
           .about__biography-container
             .about__biography-container-line
-              %a.l-side.sub-title 2019年―
-              %a.r-side.text-indent WEBサービスの知識を身につけて、自分の発信するものが人の目に触れる機会を増やしたい、さまざまな分野や環境で幅広く貢献したいと考えるようになりました。4月11日から本格的にプログラミング学習に着手。現在も１日も休まずに学習を継続しています。
+              %a.l-side.sub-title 2019年― プログラミング学習開始
+              %a.r-side.text-indent 技術を身につけて自分の発信力を強化したい、アイデアを形にして喜んでもらえることを仕事にしたいと考えて、4月11日から本格的にプログラミング学習に着手。現在も１日も休まずに学習を継続しています。
             .about__biography-container-line
-              %a.l-side.sub-title 2015年―
-              %a.r-side.text-indent 塾・予備校業界で校舎運営を経験。入社後まもなく探究心を買われ、入試情報の収集・発信業務を兼務するようになりました。現在は主にイベントの実施運営(スライド制作・司会)、情報誌の制作（進行管理・取材・ライティング・編集校正）、WEBコンテンツの作成（記事の執筆・データ収集）など幅広く担当しています。特にスライド制作では内外とも高く評価され、いまでは所属ブランドの資料作成を一任されています。「わかりやすさ」「伝わりやすさ」を考えて発信していくことが好きで、これを得意としてきました。
+              %a.l-side.sub-title 2015年― 塾・予備校を経営する会社に新卒入社
+              %a.r-side.text-indent 塾・予備校業界で校舎運営を経験。入社後まもなく探究心を買われ、入試情報の収集・発信業務を兼務するようになりました。現在は主にイベントの実施運営(スライド制作・司会)、情報誌の制作（進行管理・取材・ライティング・編集校正）、WEBコンテンツの作成（記事の執筆・データ収集）など幅広く担当しています。特に制作した資料は9割以上のお客様から高評価をいただいており、いまでは所属ブランドの資料作成を一任されています。「わかりやすさ」「伝わりやすさ」を考えて発信していくことが好きで、これを得意としてきました。
+              %br
+              %a.r-side.text-indent また、仕事の進め方に関しても、現状をより良くしていく視点と発信力が強みです。関連部署を巻き込んだ業務改善や効率化を図っており、イベント実施の役割分担を採用してもらえたり、定例会実施のきっかけをつくったりと、抜本的な改革に貢献しました。「わかりやすくなった！」と言ってもらえることが自信になっています。
             .about__biography-container-line
               %a.l-side.sub-title.under-line Experience and Skills
               %p.r-side.text-indent HTML / CSS / JavaScript / jQuery /
@@ -96,6 +98,7 @@
                   %p.text-indent ・mechanize： スクレイピング
                   %p.text-indent ・gretel： パンくずリスト
                   %p.text-indent ・kaminari： ページネーション
+                  %p.text-indent ・RSpec： テストコード
                   %p.text-indent ・devise： ユーザー管理　など
 
         %li.fadeInUp.grad-wrap
@@ -117,7 +120,7 @@
                 .work-comment-content
                   %a.subheading 開発環境
                   %p Ruby / Ruby on Rails / MySQL / Github / AWS / Visual Studio Code
-                  %a.subheading  開発機関と平均作業時間
+                  %a.subheading  開発期間と平均作業時間
                   %p 平日2.5時間、休日8時間
                   %a.subheading  開発体制
                   %p 人数5名、アジャイル型開発（スクラム）、Trelloによるタスク管理、Slack・Zoomを用いた話し合い
@@ -125,7 +128,8 @@
                 %h4.work-comment-sec こだわりポイント
                 .work-comment-content.two-column
                   .two-column__left
-                    %p.text-indent ・初心者ガイドを作成し、新規登録後にページ遷移するようにしました。実在するサービスに関して、「登録したけど使ってない」「何からはじめてよいかわからない」というチームメンバーの声をもとに、アクティブ・ユーザー数を増やすためのサービス利用開始を促す工夫として取り入れました。
+                    %p.text-indent ・初心者ガイドを作成し、新規登録後にページ遷移するようにしました。実在するサービスに関して、「登録したけど使ってない」「何からはじめてよいかわからない」というチームメンバーの声をもとに、登録初期のアクティブ・ユーザー数を増やすための工夫として取り入れました。
+                    %p.text-indent ・具体的な開発に取り掛かるまえに、DB設計と割り振りの打ち合わせを入念に行いました。一つ一つの機能を細かく切り分けて考えて、実際にサービスを使ってみたり想像したりしながら話し合いました。ここで、チームメンバーの共通認識をつくることができたため、その後の開発もコミュニケーションも円滑にいったのだと思います。
                   .two-column__right
                     = link_to "images/freemarket-guide.png", target: "blank", class: "guide-image" do 
                       = image_tag "freemarket-guide.png"
@@ -165,6 +169,7 @@
                   %p.text-indent ・carrierwave： 画像アップロード
                   %p.text-indent ・recaptcha：画像認証機能
                   %p.text-indent ・devise： ユーザー管理
+                  %p.text-indent ・RSpec： テストコード
                   %p.text-indent ・gretel： パンくずリスト など
 
         %li.fadeInUp.grad-wrap
@@ -225,7 +230,8 @@
                 %h4.work-comment-sec こだわりポイント
                 .work-comment-content.two-column
                   .two-column__left
-                    %p.text-indent ・ずっと自力でつくってみたいと思っていたメールフォームを導入しました。なかなかメール送信できず苦労しましたが、あえて外部サービスに頼らずに自力で実装できたことで自信になりました。
+                    %p.text-indent ・ずっと自力でつくってみたいと思っていたメールフォームを導入しました。なかなかメール送信できず苦労しましたが、あえて外部サービスに頼らずに実装できたことが自信になりました。
+                    %p.text-indent ・JavaScriptやjQueryを用いて動きをつけて、少しでも飽きないようにと工夫しました。スクロール時にフェイドインしたり、「続きを読む」形式でコンテンツが広がる仕組みにしたり、ページトップにスクロールするボタンを設置したり、動きをつけたことでその分リッチさは上げられたのではないかと思います。
                   .two-column__right
                     = link_to "images/portfolio-contact.png", target: "blank", class: "guide-image" do 
                       = image_tag "portfolio-contact.gif"
