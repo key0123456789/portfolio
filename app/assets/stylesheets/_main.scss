@@ -289,7 +289,24 @@
               padding: 0 12px;
               position: relative;
               &-article {
-
+                .blank-link {
+                  color: $color-black; 
+                  &:link, :visited {
+                    color: $color-black;  
+                  }
+                  &:hover {
+                    color: $color-l-sea;
+                    text-decoration: underline;
+                  }
+                }
+                h3 {
+                  &::after {
+                    content: "\f08e";
+                    font-family: FontAwesome;
+                    font-weight: 900;
+                    font-size: 0.9em;
+                  }
+                }
               }
               &-title {
                 font-size: 1.2em;

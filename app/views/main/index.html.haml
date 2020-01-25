@@ -35,7 +35,7 @@
               %p.r-side.text-indent AWS / Heroku / GitHub / Trello / Slack
             .about__biography-container-line
               %a.l-side.sub-title.under-line Like
-              %a.r-side.text-indent ごはんやさんの開拓、日本酒、料理、旅行、ゲーム、オフ会、ドラム、野球観戦、写真
+              %a.r-side.text-indent 食べ歩き、日本酒、料理、旅行、ゲーム、オフ会、ドラム、野球観戦、写真
               %p.note ★メインの写真は沖縄の美ら海水族館で撮影したものです。
         .about__image
           = image_tag("si01-removebg.png", alt: "Shoko Iwasaki")
@@ -67,10 +67,10 @@
               .work-comment-article
                 %h4.work-comment-sec こだわりポイント
                 .work-comment-content
-                  %p.text-indent ・他のサービスにない、自分の「きろく」をメインに表示します。自分だけのページを作り上げていくような感覚で「日本酒を覚えたい」という思いを叶えるサイトとして考案しました。
                   %p.text-indent ・約1,900件の銘柄から、漢字・ひらがなで検索できるようにしました。検索結果を動的に表示し、スピーディに銘柄の詳細ページにアクセスできるようにしています。
-                  %p.text-indent ・銘柄の詳細ページは自分の過去の「きろく」をもとにメーター形式で表示するようにしました。どういう感想を抱いたかを視覚的にわかりやすく見せるために工夫しました。
-                  %p.text-indent ・「きろく」は直感的に入力しやすく、視覚的にも楽しめるようにラジオボタンに動きをつけました。呑んでいても手軽に入力できることを重要視しました。
+                  %p.text-indent ・各銘柄のページは、自分の「きろく」をメインに表示する仕様にしました。「日本酒を覚えたい」という思いを叶えるために、自分だけのページを作り上げていくような感覚が持てるサイトを考案しました。
+                  %p.text-indent ・「きろく」はメーター形式で表示するようにしました。どういう感想を抱いたかを視覚的にわかりやすく見せるために工夫しました。
+                  %p.text-indent ・「きろく」の入力は直感的に操作しやすく、かつ、視覚的にも楽しめるようにラジオボタンに動きをつけました。呑んでいても手軽に入力できることを重要視しました。
                   %p.text-indent ・マイページでは、自分の「きろく」の一覧を見たり、ブックマークした銘柄にアクセスしたりすることができます。
                 .work-comment-content.flex
                   .flex-image
@@ -195,7 +195,8 @@
               = image_tag("chat-space.png", alt: "")
             .work-comment
               .work-comment-article
-                %h3.work-comment-title チャットアプリ「Chat Space」
+                = link_to "http://3.114.41.7/", target: "blank", class: "blank-link" do
+                  %h3.work-comment-title チャットアプリ「Chat Space」
                 .work__ico-github
                   %i.fa.fa-github
                   = link_to "", "https://github.com/key0123456789/chat-space", class: "li-link", target: "blank"
