@@ -11,6 +11,20 @@ $(document).ready(function(){
     });
   });
 
+  $(function(){
+    var timer = false;
+    $(window).resize(function() {
+      if (timer !== false) {
+        clearTimeout(timer);
+      }
+    timer = setTimeout(function() {
+        //リロード
+        location.reload();
+      }, 200);
+    });
+  });
+
+
   $(".grad-trigger").click(function(){ //トリガーをクリックしたとき
     if(!$(this).hasClass("is-show")) {
       var index = $(this).index(".grad-trigger"); //何個目のトリガーか
