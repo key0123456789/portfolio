@@ -27,9 +27,9 @@
               %a.r-side.text-indent 技術を身につけて自分の発信力を強化したい、アイデアを形にして喜んでもらえることを仕事にしたいと考えて、4月11日から本格的にプログラミング学習に着手。現在も１日も休まずに学習を継続しています。
             .about__biography-container-line
               %a.l-side.sub-title 2015年― 塾・予備校を経営する会社に新卒入社
-              %a.r-side.text-indent 塾・予備校業界で校舎運営を経験。入社後まもなく探究心を買われ、入試情報の収集・発信業務を兼務するようになりました。現在は主にイベントの実施運営(スライド制作・司会)、情報誌の制作（進行管理・取材・ライティング・編集校正）、WEBコンテンツの作成（記事の執筆・データ収集）など幅広く担当しています。特に制作した資料は9割以上のお客様から高評価をいただいており、いまでは所属ブランドの資料作成を一任されています。「わかりやすさ」「伝わりやすさ」を考えて発信していくことが好きで、これを得意としてきました。
+              %a.r-side.text-indent 塾・予備校業界で校舎運営を経験。入社後まもなく研究歴と発信力を買われ、入試情報の収集・発信業務を兼務するようになりました。現在は、情報誌の制作（進行管理・取材・ライティング・編集校正）、WEBコンテンツの作成（記事の執筆・データ収集）、イベントの実施運営(スライド制作・司会)など幅広く担当しています。とくにスライド資料は褒めていただけることが多く、作成した資料で9割以上のお客様から高評価をいただけるようになりました。「わかりやすさ」「伝わりやすさ」を考えて発信していくことが好きで、これを得意としてきました。
               %br
-              %a.r-side.text-indent また、仕事の進め方に関しても、現状をより良くしていく視点と発信力が強みです。関連部署を巻き込んだ業務改善や効率化を図っており、イベント実施の役割分担を採用してもらえたり、定例会実施のきっかけをつくったりと、抜本的な改革に貢献しました。「わかりやすくなった！」と言ってもらえることが自信になっています。
+              %a.r-side.text-indent また、仕事の進め方に関しても、現状をより良くしていく視点と発信力が強みです。関連部署を巻き込んだ業務改善や効率化を図っており、イベント実施の役割分担案を採用してもらえたり、定例会実施のきっかけをつくったりと、抜本的な改革に貢献しました。さまざまな場面で「わかりやすくなった！」と言ってもらえることが自信になっています。
             .about__biography-container-line
               %a.l-side.sub-title.under-line Experience and Skills
               %p.r-side.text-indent HTML / CSS / JavaScript / jQuery /
@@ -108,13 +108,24 @@
               = image_tag("freemarket_sample.png", alt: "Freemarket(clone)")
             .work-comment
               .work-comment-article
-                %h3.work-comment-title フリーマーケットサイト（コピー）
+                = link_to "http://13.115.59.123/", target: "blank", class: "blank-link" do
+                  %h3.work-comment-title フリーマーケットサイト（コピー）
                 .work__ico-github
                   %i.fa.fa-github
                   = link_to "", "https://github.com/key0123456789/freemarket_sample_53b", class: "li-link", target: "blank"
                   %a GitHubソースコード
                 .work-comment-content
-                  %p 有名フリーマーケットサイトにおける商品やりとりの一連の流れを再現しました。
+                  %p 有名フリーマーケットサイトにおける商品やりとりなど一連の流れを再現しました。
+                  %p スクール生でチームを組んで開発を行いました。
+                .work-comment-content
+                  .summary-column
+                    %p ◆ BASIC認証
+                    %a BASIC認証 ID：freemarket_sample_53b ／ パスワード：8480
+                    %p ◆ テスト用アカウント（出品者・購入者）
+                    %a メールアドレス：test1@gmail.com ／ パスワード：1234qwer
+                    %p ◆ 購入用カード情報
+                    %a 番号：4242424242424242 ／ 期限：10/20 ／ セキュリティコード：123
+                    
               .work-comment-article
                 %h4.work-comment-sec 開発の状況
                 .work-comment-content
@@ -133,7 +144,6 @@
                   .two-column__right
                     = link_to "images/freemarket-guide.png", target: "blank", class: "guide-image" do 
                       = image_tag "freemarket-guide.png"
-
               .work-comment-article
                 %h4.work-comment-sec 開発の所感
                 .work-comment-content.two-column
@@ -171,27 +181,19 @@
                   %p.text-indent ・devise： ユーザー管理
                   %p.text-indent ・RSpec： テストコード
                   %p.text-indent ・gretel： パンくずリスト など
-
-        %li.fadeInUp.grad-wrap
-          %a.grad-trigger タスク管理アプリ「Antask」
-          .work.grad-item
-            .work-image
-              = image_tag("antask.png", alt: "Antask")
-            .work-comment
               .work-comment-article
-                %h3.work-comment-title タスク管理アプリ「Antask」
-                .work__ico-github
-                  %i.fa.fa-github
-                  = link_to "", "https://github.com/key0123456789/antask", class: "li-link", target: "blank"
-                  %a GitHubソースコード
+                %h4.work-comment-sec ★ 最終課題発表会で語ったこと
                 .work-comment-content
-                  %p CRUDを網羅したアプリとして練習のために作成しました。
-                  %p 『現場で使える Ruby on Rails 5 速習実践ガイド』を参考に作成しています。
-              .work-comment-article
-                %h4.work-comment-sec 開発の所感
-                .work-comment-content
-                  %a slimやBootstrapなど、いままで触れてこなかったものを使いながら作成したため、新鮮な気持ちで取り組むことができ、良い経験になりました。
-                  %a 新しいことを取り入れながら、自分のできること、考えられることを増やしていきたいです。
+                  %p.text-indent ・チーム開発に入る前は「早く学習をはじめた人と一緒にできるのか」「もっと勉強したほうが良いのでは？」という不安ばかりでした。しかし、実際は、他の人のコードを読んだり、どうしても再現したい機能に当たってもがいたりするなかで、力がついていくのだと実感しました。
+                  %p.text-indent ・また、1日も欠かさずコンスタントにプログラミングに触れられているのは"どん欲"だったから、だと振り返りました。大好きなごはんや、たまにのゲーム、友人との約束など、生活を大きく変えなかったからこそ、日常のなかにプログラミングを取り込むことができたと思っています。
+                  %p.text-indent ※発表用のスライドの雛形も担当させていただきました。
+                .work-comment-content.flex
+                  .flex-image
+                    = link_to "images/Freemarket_Sample53b-slide1.png", target: "blank" do 
+                      = image_tag "Freemarket_Sample53b-slide1.png"
+                  .flex-image
+                    = link_to "images/Freemarket_Sample53b-slide2.png", target: "blank" do 
+                      = image_tag "Freemarket_Sample53b-slide2.png"
 
         %li.fadeInUp.grad-wrap
           %a.grad-trigger チャットアプリ「Chat Space」
@@ -210,6 +212,27 @@
                   %p グループチャットのできるアプリです。
                   %p ユーザーがグループを作成し、そこに他のユーザーを検索し招待することができます。
                   %p スクールのカリキュラムを参考に作成しています。
+
+        -# %li.fadeInUp.grad-wrap
+        -#   %a.grad-trigger タスク管理アプリ「Antask」
+        -#   .work.grad-item
+        -#     .work-image
+        -#       = image_tag("antask.png", alt: "Antask")
+        -#     .work-comment
+        -#       .work-comment-article
+        -#         %h3.work-comment-title タスク管理アプリ「Antask」
+        -#         .work__ico-github
+        -#           %i.fa.fa-github
+        -#           = link_to "", "https://github.com/key0123456789/antask", class: "li-link", target: "blank"
+        -#           %a GitHubソースコード
+        -#         .work-comment-content
+        -#           %p CRUDを網羅したアプリとして練習のために作成しました。
+        -#           %p 『現場で使える Ruby on Rails 5 速習実践ガイド』を参考に作成しています。
+        -#       .work-comment-article
+        -#         %h4.work-comment-sec 開発の所感
+        -#         .work-comment-content
+        -#           %a slimやBootstrapなど、いままで触れてこなかったものを使いながら作成したため、新鮮な気持ちで取り組むことができ、良い経験になりました。
+        -#           %a 新しいことを取り入れながら、自分のできること、考えられることを増やしていきたいです。
 
         %li.fadeInUp.grad-wrap
           %a.grad-trigger ポートフォリオサイト(当サイト)
@@ -267,7 +290,6 @@
                   %p.text-indent ・現職では、わずかな指定を除きデザインを一任されていて「わたし以上に拘る人はいない」と言われるほどでした。直属の先輩もいない環境で独学で試行錯誤しながらクオリティを高めました。
                   %p.text-indent ・単位より数字を一回り大きくする、要素のカタマリをわかりやすくする、適度な余白をとる、など、洗練した読みやすい資料を心がけていました。
                   %p.text-indent ・スライド作成を通して感じたのは、わかりやすいとはなにか、どうやったら伝わるかを考えるのが好きだということ！　発信する手段を広げるために、またその道のプロの中で働くために、今度はプログラミングを身に着けたいと強く思いました。
-
 
     .content.cover
       .contact#contact

@@ -337,6 +337,24 @@
                   font-size: 1.1em;
                   display: block;
                 }
+                .summary-column {
+                  margin: 8px 0;
+                  padding: 12px;
+                  border: 1px solid #666;
+                  border-radius: 4px;
+                  background-color: #eee;
+                  color: #666;
+                  p {
+                    font-weight: bold;
+                    padding: 8px 0 4px;
+                    font-size: 0.85em;
+                  }
+                  a {
+                    padding-left: 1em;
+                    display: block;
+                    font-size: 0.9em;
+                  }
+                }
               }
               .flex {
                 display: -webkit-flex;
