@@ -16,7 +16,7 @@
             %h1 SHOKO IWASAKI
           .main__box-text
             %h2 Apprentice Engineer
-    .content.cover
+    .content-about.cover
       .about#about
         .about__title About
         .about__biography
@@ -32,7 +32,7 @@
               %a.r-side.text-indent また、仕事の進め方に関しても、現状をより良くしていく視点と発信力が強みです。関連部署を巻き込んだ業務改善や効率化を図っており、イベント実施の役割分担案を採用してもらえたり、定例会実施のきっかけをつくったりと、抜本的な改革に貢献しました。さまざまな場面で「わかりやすくなった！」と言ってもらえることが自信になっています。
             .about__biography-container-line
               %a.l-side.sub-title.under-line Experience and Skills
-              %p.r-side.text-indent HTML / CSS / JavaScript / jQuery /
+              %p.r-side.text-indent HTML / CSS / JavaScript / jQuery / Vue.js(勉強中)
               %p.r-side.text-indent Ruby / Ruby on Rails / RSpec / MySQL / PostgreSQL
               %p.r-side.text-indent AWS / Heroku / GitHub / Trello / Slack
             .about__biography-container-line
@@ -93,13 +93,16 @@
                   %p.text-indent ・はじめて検索機能＆検索結果の非同期通信を実践しました。以前は難しいと感じていたところや理解が甘い箇所も自力で補うことができました。
                   %p.text-indent ・過去の知識をもとにいろいろな機能を自力で考えられるようになり、格段に開発がスムーズになったと感じました。経験と知識を積むほど、自分のできることが増えていくのだろうと思います。いまの自分が考えられる以上のことをたくさん経験して、対応できる幅をどんどん広げていきたいです。
               .work-comment-article
-                %h4.work-comment-sec 使用したGem
+                %h4.work-comment-sec 開発の状況
                 .work-comment-content
-                  %p.text-indent ・mechanize： スクレイピング
-                  %p.text-indent ・gretel： パンくずリスト
-                  %p.text-indent ・kaminari： ページネーション
-                  %p.text-indent ・RSpec： テストコード
-                  %p.text-indent ・devise： ユーザー管理　など
+                  %a.subheading 開発環境
+                  %p Ruby / Ruby on Rails / MySQL / Github / Visual Studio Code
+                  %a.subheading 使用したGem
+                  %p ・mechanize： スクレイピング
+                  %p ・gretel： パンくずリスト
+                  %p ・kaminari： ページネーション
+                  %p ・RSpec： テストコード
+                  %p ・devise： ユーザー管理　など
 
         %li.fadeInUp.grad-wrap
           %a.grad-trigger フリーマケットサイト（コピー） ※チーム開発
@@ -131,6 +134,13 @@
                 .work-comment-content
                   %a.subheading 開発環境
                   %p Ruby / Ruby on Rails / MySQL / Github / AWS / Visual Studio Code
+                  %a.subheading 使用したGem
+                  %p ・active_hash： ハッシュのデータの管理
+                  %p ・carrierwave： 画像アップロード
+                  %p ・recaptcha：画像認証機能
+                  %p ・devise： ユーザー管理
+                  %p ・RSpec： テストコード
+                  %p ・gretel： パンくずリスト など
                   %a.subheading  開発期間と平均作業時間
                   %p 平日2.5時間、休日8時間
                   %a.subheading  開発体制
@@ -173,15 +183,6 @@
                         = link_to "images/freemarket-breadcrumbs.png", target: "blank" do 
                           = image_tag "freemarket-breadcrumbs.png"
               .work-comment-article
-                %h4.work-comment-sec 使用したGem
-                .work-comment-content
-                  %p.text-indent ・active_hash： ハッシュのデータの管理
-                  %p.text-indent ・carrierwave： 画像アップロード
-                  %p.text-indent ・recaptcha：画像認証機能
-                  %p.text-indent ・devise： ユーザー管理
-                  %p.text-indent ・RSpec： テストコード
-                  %p.text-indent ・gretel： パンくずリスト など
-              .work-comment-article
                 %h4.work-comment-sec ★ 最終課題発表会で語ったこと
                 .work-comment-content
                   %p.text-indent ・チーム開発に入る前は「早く学習をはじめた人と一緒にできるのか」「もっと勉強したほうが良いのでは？」という不安ばかりでした。しかし、実際は、他の人のコードを読んだり、どうしても再現したい機能に当たってもがいたりするなかで、力がついていくのだと実感しました。
@@ -194,45 +195,6 @@
                   .flex-image
                     = link_to "images/Freemarket_Sample53b-slide2.png", target: "blank" do 
                       = image_tag "Freemarket_Sample53b-slide2.png"
-
-        %li.fadeInUp.grad-wrap
-          %a.grad-trigger チャットアプリ「Chat Space」
-          .work.grad-item
-            .work-image
-              = image_tag("chat-space.png", alt: "")
-            .work-comment
-              .work-comment-article
-                = link_to "http://3.114.41.7/", target: "blank", class: "blank-link" do
-                  %h3.work-comment-title チャットアプリ「Chat Space」
-                .work__ico-github
-                  %i.fa.fa-github
-                  = link_to "", "https://github.com/key0123456789/chat-space", class: "li-link", target: "blank"
-                  %a GitHubソースコード
-                .work-comment-content
-                  %p グループチャットのできるアプリです。
-                  %p ユーザーがグループを作成し、そこに他のユーザーを検索し招待することができます。
-                  %p スクールのカリキュラムを参考に作成しています。
-
-        -# %li.fadeInUp.grad-wrap
-        -#   %a.grad-trigger タスク管理アプリ「Antask」
-        -#   .work.grad-item
-        -#     .work-image
-        -#       = image_tag("antask.png", alt: "Antask")
-        -#     .work-comment
-        -#       .work-comment-article
-        -#         %h3.work-comment-title タスク管理アプリ「Antask」
-        -#         .work__ico-github
-        -#           %i.fa.fa-github
-        -#           = link_to "", "https://github.com/key0123456789/antask", class: "li-link", target: "blank"
-        -#           %a GitHubソースコード
-        -#         .work-comment-content
-        -#           %p CRUDを網羅したアプリとして練習のために作成しました。
-        -#           %p 『現場で使える Ruby on Rails 5 速習実践ガイド』を参考に作成しています。
-        -#       .work-comment-article
-        -#         %h4.work-comment-sec 開発の所感
-        -#         .work-comment-content
-        -#           %a slimやBootstrapなど、いままで触れてこなかったものを使いながら作成したため、新鮮な気持ちで取り組むことができ、良い経験になりました。
-        -#           %a 新しいことを取り入れながら、自分のできること、考えられることを増やしていきたいです。
 
         %li.fadeInUp.grad-wrap
           %a.grad-trigger ポートフォリオサイト(当サイト)
@@ -259,10 +221,57 @@
                     = link_to "images/portfolio-contact.png", target: "blank", class: "guide-image" do 
                       = image_tag "portfolio-contact.gif"
               .work-comment-article
-                %h4.work-comment-sec 使用したGem
+                %h4.work-comment-sec 開発の状況
                 .work-comment-content
-                  %p.text-indent ・letter_opener_web： 開発時のメール送信機能の確認
-                  %p.text-indent ・figaro： 定数の管理
+                  %a.subheading 開発環境
+                  %p Ruby / Ruby on Rails / Github / Heroku / Visual Studio Code
+                  %a.subheading 使用したGem
+                  %p ・letter_opener_web： 開発時のメール送信機能の確認
+                  %p ・figaro： 定数の管理
+
+        %li.fadeInUp.grad-wrap
+          %a.grad-trigger タスク管理アプリ「Antask」
+          .work.grad-item
+            .work-image
+              = image_tag("antask.png", alt: "Antask")
+            .work-comment
+              .work-comment-article
+                %h3.work-comment-title タスク管理アプリ「Antask」
+                .work__ico-github
+                  %i.fa.fa-github
+                  = link_to "", "https://github.com/key0123456789/antask", class: "li-link", target: "blank"
+                  %a GitHubソースコード
+                .work-comment-content
+                  %p CRUDを網羅したアプリとして練習のために作成しました。
+                  %p 独学で使用した『現場で使える Ruby on Rails 5 速習実践ガイド』を参考に作成しています。
+              .work-comment-article
+                %h4.work-comment-sec 開発の所感
+                .work-comment-content
+                  %a slimやBootstrapなど、いままで触れてこなかったものを使いながら作成したため、新鮮な気持ちで取り組むことができ、良い経験になりました。
+                  %a 新しいことを取り入れながら、自分のできること、考えられることの幅を増やしていきたいと思いました。
+
+        %li.fadeInUp.grad-wrap
+          %a.grad-trigger チャットアプリ「Chat Space」
+          .work.grad-item
+            .work-image
+              = image_tag("chat-space.png", alt: "")
+            .work-comment
+              .work-comment-article
+                = link_to "http://3.114.41.7/", target: "blank", class: "blank-link" do
+                  %h3.work-comment-title チャットアプリ「Chat Space」
+                .work__ico-github
+                  %i.fa.fa-github
+                  = link_to "", "https://github.com/key0123456789/chat-space", class: "li-link", target: "blank"
+                  %a GitHubソースコード
+                .work-comment-content
+                  %p グループチャットのできるアプリです。
+                  %p ユーザーがグループを作成し、そこに他のユーザーを検索し招待することができます。
+                  %p スクールのカリキュラムを参考に作成しています。
+                .work-comment-article
+                  %h4.work-comment-sec 開発の所感
+                  .work-comment-content
+                    %a はじめてAWSを用いて自動デプロイまで行ったアプリです。
+                    %a デプロイは何度も詰まりましたが、他の作業を挟んだり、勉強会に参加するなどしながら前進している感覚を維持することを大事にして進めました。
 
         %li.fadeInUp.grad-wrap
           %a.grad-trigger Others： 得意なこと ＆ 好きなこと
@@ -287,9 +296,9 @@
               .work-comment-article
                 %h4.work-comment-sec ★ スライド作成から学んだこと
                 .work-comment-content
-                  %p.text-indent ・現職では、わずかな指定を除きデザインを一任されていて「わたし以上に拘る人はいない」と言われるほどでした。直属の先輩もいない環境で独学で試行錯誤しながらクオリティを高めました。
-                  %p.text-indent ・単位より数字を一回り大きくする、要素のカタマリをわかりやすくする、適度な余白をとる、など、洗練した読みやすい資料を心がけていました。
-                  %p.text-indent ・スライド作成を通して感じたのは、わかりやすいとはなにか、どうやったら伝わるかを考えるのが好きだということ！　発信する手段を広げるために、またその道のプロの中で働くために、今度はプログラミングを身に着けたいと強く思いました。
+                  %p.text-indent ・スライド作成を通して感じたのは、わかりやすいとはなにか、どうやったら伝わるかを考えるのが好きだということ！　そして、自分の知識や経験で作り上げたものを喜んでもらえることがうれしく、もっとさまざまなことを勉強したいと考えるようになりました。
+                  %p.text-indent ・現職では、わずかな指定を除きデザインを一任されています。直属の先輩もいない環境で試行錯誤しながらクオリティを高めました。
+                  %p.text-indent ・洗練した読みやすい資料を心がけ、単位より数字を一回り大きくする、要素のカタマリをわかりやすくする、適度な余白をとるといった工夫をしていました。
 
     .content.cover
       .contact#contact

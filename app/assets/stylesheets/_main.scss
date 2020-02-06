@@ -50,6 +50,10 @@
     .content {
       height: 100vh;
       padding: 0 18px;
+      &-about {
+        height: auto;
+        padding: 0 18px 40px;
+      }
     }
     .cover {
       position: relative;
@@ -113,18 +117,18 @@
       }
     }
     .about {
-      position: relative;
+      // position: relative;
       height: 100%;
-      overflow: scroll;
+      // overflow: scroll;
       &__title {
         padding: 70px 16px 8px;
         font-size: 2.0em;
         letter-spacing: 0.2em;
       }
       &__biography {
-        position: absolute;
+        // position: absolute;
         max-width: 720px;
-        min-width: 200px;
+        min-width: 320px;
         margin: 12px 180px 40px 16px;
         padding: 24px 20px 32px;
         background-color: white;
@@ -176,6 +180,7 @@
         position: absolute;
         bottom: 50px;
         right: 0;
+        z-index:-1;
         img {
           width: 200px;
           object-fit: cover;
@@ -195,6 +200,7 @@
         justify-content: space-between;
         margin: 0 16px;
         max-width: 1200px;
+        min-width: 380px;
         li {
           width: auto;
           margin: 0 0 60px;
@@ -452,7 +458,6 @@
         width: 100%;
         margin: 0 16px 20px;
         ul {
-          width: 60%;
           li {
             display: inline-block;
             color: $color-l-gray;
