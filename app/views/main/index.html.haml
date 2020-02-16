@@ -59,39 +59,47 @@
                   = link_to "", "https://github.com/key0123456789/Sakemo", class: "li-link", target: "blank"
                   %a GitHubソースコード
                 .work-comment-content
-                  %p 呑んだ日本酒の感想〈Sake * Emotion〉を直感的に入力できるアプリです。日本酒は好きだがなかなか銘柄が覚えられない…という悩みを払拭すべく、酔っぱらいでも「きろく」を残せるかどうかを念頭において作成しました。
+                  %p 呑んだ日本酒の感想(Sake × Emotion)を残すためのアプリです。
+                  %p 日本酒は好きだがなかなか銘柄が覚えられない…という悩みを払拭すべく、酔っぱらいでも直感的に記録できるようにしました。
               .work-comment-article
                 %h4.work-comment-sec 特長
                 .work-comment-content
-                  %p.text-indent ・"お気に入り度"や"コメント"を含む、さまざまな観点で「きろく」を残すことができます。
-                  %p.text-indent ・気になる銘柄は「ブックマーク」に登録して、一覧で見ることができます。
-                  %p.text-indent ・初期データとして約1,900件の銘柄を用意しました。
+                  %p.text-indent ・お酒ごと、６つの観点で「きろく」を残すことができます。
+                  %p.text-indent ・他のユーザーのコメントも閲覧できます。
+                  %p.text-indent ・約1,900件のデータからお酒を検索できます。
+                  %p.text-indent ・気になるお酒は「ブックマーク」に登録できます。
+                  %p.text-indent ・特定名称酒（純米吟醸 など）はユーザーの手で追加・削除できます。
               .work-comment-article
                 %h4.work-comment-sec こだわりポイント
-                .work-comment-content
-                  %p.text-indent ・約1,900件の銘柄から、漢字・ひらがなで検索できるようにしました。検索結果を動的に表示し、スピーディに銘柄の詳細ページにアクセスできるようにしています。
-                  %p.text-indent ・各銘柄のページは、自分の「きろく」をメインに表示する仕様にしました。「日本酒を覚えたい」という思いを叶えるために、自分だけのページを作り上げていくような感覚が持てるサイトを考案しました。
-                  %p.text-indent ・「きろく」はメーター形式で表示するようにしました。どういう感想を抱いたかを視覚的にわかりやすく見せるために工夫しました。
-                  %p.text-indent ・「きろく」の入力は直感的に操作しやすく、かつ、視覚的にも楽しめるようにラジオボタンに動きをつけました。呑んでいても手軽に入力できることを重要視しました。
-                  %p.text-indent ・マイページでは、自分の「きろく」の一覧を見たり、ブックマークした銘柄にアクセスしたりすることができます。
-                .work-comment-content.flex
-                  .flex-image
-                    = link_to "images/sakemo-main.png", target: "blank" do 
-                      = image_tag "sakemo-main.png"
-                  .flex-image
+                .work-comment-content.two-column
+                  .two-column__left
+                    %p.text-indent ・スクレイピングで約1,900件の銘柄を用意。漢字・ひらがなで検索できます。
+                    %p.text-indent ・検索結果はAjaxで動的に表示します。
+                  .two-column__right
+                    = link_to "images/sakemo-search.gif", target: "blank", class: "guide-image" do 
+                      = image_tag "sakemo-search.gif"
+                .work-comment-content.two-column
+                  .two-column__left
+                    %p.text-indent ・各銘柄のページには、過去の自分の「きろく」が表示されます。
+                  .two-column__right
                     = link_to "images/sakemo-brand.png", target: "blank" do 
                       = image_tag "sakemo-brand.png"
-                  .flex-image
-                    = link_to "images/sakemo-feeling-edit.png", target: "blank" do 
-                      = image_tag "sakemo-feeling-edit.png"
-                  .flex-image
+                .work-comment-content.two-column
+                  .two-column__left
+                    %p.text-indent ・「きろく」の入力は直感的に操作しやすく、かつ、視覚的にも楽しめるようにラジオボタンに動きをつけました。
+                  .two-column__right
+                    = link_to "images/sakemo-save.gif", target: "blank", class: "guide-image" do 
+                      = image_tag "sakemo-save.gif"
+                .work-comment-content.two-column
+                  .two-column__left
+                    %p.text-indent ・マイページでは、自分の「きろく」の一覧を見たり、ブックマークした銘柄にアクセスしたりすることができます。
+                  .two-column__right
                     = link_to "images/sakemo-mypage.png", target: "blank" do 
                       = image_tag "sakemo-mypage.png"
               .work-comment-article
                 %h4.work-comment-sec 開発の所感
                 .work-comment-content
-                  %p.text-indent ・はじめて検索機能＆検索結果の非同期通信を実践しました。以前は難しいと感じていたところや理解が甘い箇所も自力で補うことができました。
-                  %p.text-indent ・過去の知識をもとにいろいろな機能を自力で考えられるようになり、格段に開発がスムーズになったと感じました。経験と知識を積むほど、自分のできることが増えていくのだろうと思います。いまの自分が考えられる以上のことをたくさん経験して、対応できる幅をどんどん広げていきたいです。
+                  %p.text-indent ・はじめて検索機能＆検索結果の非同期通信を実践しました。過去の知識をもとにいろいろな機能を自力で考えられるようになり、格段に開発がスムーズになったと感じました。経験と知識を積むほど、自分のできることが増えていくのだろうと思います。いまの自分が考えられる以上のことをたくさん経験して、対応できる幅をどんどん広げていきたいです。
               .work-comment-article
                 %h4.work-comment-sec 開発の状況
                 .work-comment-content
@@ -215,8 +223,8 @@
                 %h4.work-comment-sec こだわりポイント
                 .work-comment-content.two-column
                   .two-column__left
-                    %p.text-indent ・ずっと自力でつくってみたいと思っていたメールフォームを導入しました。なかなかメール送信できず苦労しましたが、あえて外部サービスに頼らずに実装できたことが自信になりました。
-                    %p.text-indent ・JavaScriptやjQueryを用いて動きをつけて、少しでも飽きないようにと工夫しました。スクロール時にフェイドインしたり、「続きを読む」形式でコンテンツが広がる仕組みにしたり、ページトップにスクロールするボタンを設置したり、動きをつけたことでその分リッチさは上げられたのではないかと思います。
+                    %p.text-indent ・メールフォームを導入しました。あえて外部サービスに頼らずに実装できたことが自信になりました。
+                    %p.text-indent ・JavaScript等で動きをつけました。スクロール時にフェイドインしたり、「続きを読む」形式でコンテンツが広がる仕組みにしたり、ページトップにスクロールするボタンを設置したり、動きをつけたことでその分リッチさは上げられたのではないかと思います。
                   .two-column__right
                     = link_to "images/portfolio-contact.png", target: "blank", class: "guide-image" do 
                       = image_tag "portfolio-contact.gif"
